@@ -20,11 +20,11 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 To Do list: list structure
+# 📖 Does my coding partner follow JS best practices?
  <a name="about-project"></a>
 
 
-**To Do list** "To-do list" is used to lists the things that you need to do and allows you to mark them as complete. This is built using ES6 and Webpack!
+**Does my coding partner follow JS best practices?**  allows you to review your coding partners code
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -77,11 +77,11 @@ Contributions, issues, and feature requests are welcome!
 
 ## KEY FEATURES
 - when a user clicks the "Add" button:
-      - A new book is added to the collection.
-      - The new book is displayed in the page.
-- when a user clicks the "Remove" button:
-      - The correct book is removed from the collection.
-      - The correct book dissapears from the page.
+      - A new task is added to the collection.
+      - The new task is displayed in the page.
+- when a user clicks the "Clera All Button" button:
+      - The correct task is removed from the collection.
+      - The correct task dissapears from the page.
 
 
 ## FUTURE FEATURES
