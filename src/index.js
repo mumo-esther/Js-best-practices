@@ -8,7 +8,7 @@ let list = [
   { description: 'Write a function to iterate over the tasks array and populate an HTML', isCompleted: false, index: 3 },
 ];
 
-function todoList() {
+const todoList = () => {
   if (window.localStorage.getItem('localTasks')) {
     const localTasks = window.localStorage.getItem('localTasks');
     list = JSON.parse(localTasks);
@@ -45,7 +45,7 @@ function todoList() {
     taskElement.draggable = 'true';
     document.querySelector('.todo-list').appendChild(taskElement);
   });
-}
+};
 
 todoList();
 document.querySelector('#taskForm').addEventListener('submit', (event) => {

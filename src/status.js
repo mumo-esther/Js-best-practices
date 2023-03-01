@@ -1,8 +1,8 @@
-export function saveLocal(list) {
+export const saveLocal = (list) => {
   window.localStorage.setItem('localTasks', JSON.stringify(list));
 }
 
-export function status(elem, list) {
+export const status = (elem, list) => {
   list.forEach((task) => {
     if (task === elem) {
       task.isCompleted = !task.isCompleted;
@@ -11,13 +11,13 @@ export function status(elem, list) {
   saveLocal(list);
 }
 
-export function add(list) {
+export const add = (list) => {
   list.push({ description: document.querySelector('#newTask').value, isCompleted: false, index: list.length });
   document.querySelector('#newTask').value = '';
   saveLocal(list);
 }
 
-export function updateIndex(list) {
+export const updateIndex = (list) => {
   let i = 0;
   list.forEach((elem) => {
     elem.index = i;
@@ -25,7 +25,7 @@ export function updateIndex(list) {
   });
 }
 
-export function removeDone(list) {
+export const removeDone = (list) => {
   list = list.filter((elem) => elem.isCompleted === false);
   updateIndex(list);
   saveLocal(list);
