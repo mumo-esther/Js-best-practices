@@ -30,3 +30,8 @@ export const removeDone = (list) => {
   updateIndex(list);
   saveLocal(list);
 }
+  
+// module.exports = {
+//   add,
+//   removeDone
+// };
